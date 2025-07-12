@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Kayak Navegantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imagenes/logo.png" alt="Logo" height="30" class="me-2">
+        Escuela de Kayak Navegantes
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cursos">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/conocenos.html">Conocenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#travesias">Travesías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--BANNER PRINCIPAL-->
+  <div class="hero-img">
+  <img src="imagenes/imagen-principal.jpeg" alt="Imagen principal" class="img-fluid w-100">
+</div>
+    </header>
+    <!--MAIN-->
+
+      <!--PORQUE ELEGIRNOS-->
+        <main class="container py-5">
+          <section id="inicio" class="datos">
+            <h2>Por Que Elegirnos</h2>
+             <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+               <div class="datos-box p-3 rounded border">
+                <h3>JORNADA COMPLETA</h3>
+                <p>Salidas grupales 5 veces por semana. Turnos largos para remadas más distendidas que nos permiten conocer lugares apartados de las islas.</p>
+              </div>
+              <div class="datos-box p-3 rounded border">
+                <h3>TODOS LOS EQUIPOS</h3>
+                <p>Te damos todo el equipo necesario para realizar la actividad (kayaks, chalecos salvavidas, palas, faldón/pollera cubre-cockpit).</p>
+              </div>
+              <div class="datos-box p-3 rounded border">
+                <h3>LA MEJOR ONDA SIEMPRE</h3>              
+                <p>Te damos práctica, teoría, entrenamiento, descanso, lindos lugares y momentos compartidos con gente en un ambiente de amistad y buena onda.</p>
+               </div>
+             </div>
+          </section>
+
+    <!--NIVEL DE CURSOS-->
+
+    <section id="cursos" class="cursos">
+    <h2>Nuestros Cursos</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="nivel" id="principiante">
+          <h3>Principiante</h3>
+          <p>Ideal para quienes nunca han remado.</p>
+          <a href="pages/curso-principiante.html" class="btn btn-primary">Inscribirse</a>
+          </div>
+        </div>
+      <div class="col-md-4 mb-4">
+        <div class="nivel" id="intermedio">
+        <h3>Intermedio</h3>
+        <p>Para quienes ya tienen algo de experiencia.</p>
+        <a href="pages/curso-intermedio.html" class="btn btn-primary">Inscribirse</a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+       <div class="nivel" id="avanzado">
+        <h3>Avanzado</h3>
+        <p>Perfeccioná tu técnica con nuestros instructores.</p>
+        <a href="pages/curso-avanzado.html" class="btn btn-primary">Inscribirse</a>
+        </div>
+       </div>
+      </div>
+    </section>
+
+     <!--GALERIA-->
+    <section id="galeria" class="galeria">
+        <h2>Galería</h2>
+        <div class="imagenes">
+            <img src="imagenes/imagen1.jpeg" alt="Alumnos en kayak">
+            <img src="imagenes/imagen2.jpeg" alt="Kayak dobles">
+            <img src="imagenes/imagen3.jpeg" alt="Kayak en rio picado">
+            <img src="imagenes/imagen4.jpeg" alt="Alumnos en kayak">
+            <img src="imagenes/imagen5.jpeg" alt="Pareja en kayak doble">
+            <img src="imagenes/imagen6.jpeg" alt="Tres alumnos en kayak">
+            <div class="ver-mas">
+                <a href="pages/galeria.html" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--FORMULARIO DE CONTACTO-->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario">
+            <div class="mb-3">
+                 <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+        <div class="mb-3">
+                 <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+                  <textarea class="form-control" placeholder="Mensaje" required></textarea>
+        </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+ </main>
+
+ <!--FOOTER-->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>2025 Escuela de Kayak Navegantes- Todos los derechos reservados</p>
+        <p>Pedro Leon Gallo 137, Rosario, Santa fe</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>

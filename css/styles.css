@@ -1,0 +1,312 @@
+
+/* PAGINA PRINCIPAL */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.hero-img img {
+     
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+.datos {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+
+.datos-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+}
+
+
+
+.cursos, .galeria, .contacto {
+    padding: 50px 20px;
+}
+
+.cursos .nivel {
+    position: relative;
+    padding: 50px;
+    color: white; 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+    height: 300px; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    font-weight: bold;
+    flex-direction: column;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; 
+    text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5); 
+    margin-bottom: 1.5rem;
+}
+
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ccc;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.cursos .nivel h3 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cursos .nivel p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+#principiante {
+    background-image: url('../imagenes/kayakprincipiante.jpg');
+}
+
+#intermedio {
+    background-image: url('../imagenes/kayakintermedio.jpg');
+}
+
+#avanzado {
+    background-image: url('../imagenes/kayakavanzado.jpg');
+}
+
+
+
+
+.imagenes img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+.profesores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profe {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #f4f4f4;
+}
+
+.profe img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profe h3 {
+    margin: 10px 0;
+}
+
+
+/* GALERIA */
+#galeria {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-top: 40px;
+    padding: 0 20px; 
+    width: 100%; 
+}
+
+
+.galeria .imagen {
+    overflow: hidden; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.galeria .imagen img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.galeria .imagen:hover img {
+    transform: scale(1.1);
+}
+
+.contacto {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE TABLET*/
+
+@media (max-width: 768px) {
+
+
+  header {
+    padding: 8px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  header img {
+    height: 30px;
+  }
+
+  /* DATOS */
+  .datos-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .datos-box {
+    width: 90%;
+  }
+
+  /* GALERÍA */
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .imagenes img {
+    width: 90%;
+  }
+
+  /* FORMULARIO */
+  .formulario {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+  }
+
+  /* PROFESORES */
+  .profe {
+    width: 90%;
+  }
+
+  /* BOTONES */
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  /* GENERAL */
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .cursos .nivel h3,
+  .cursos .nivel p {
+    font-size: 1.1rem;
+  }
+}
+
+/* RESPONSIVE LARGE */
+
+@media (min-width: 1200px) {
+  
+  main {
+    padding: 4rem 8rem;
+  }
+
+  
+  .cursos .row > div.col-md-4 {
+    padding: 0 2rem;
+  }
+
+  
+  h2 {
+    font-size: 3rem;
+  }
+
+  
+  .hero-img img {
+    max-height: 700px;
+  }
+
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+}
